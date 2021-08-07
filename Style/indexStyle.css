@@ -1,0 +1,545 @@
+
+/*Header*/
+.header{
+    width:100%;
+    position: absolute;
+    top:0;
+    background: rgb(53, 53, 53);
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 3;
+    
+    
+}
+.container{
+    width:100%;
+    max-width: 1182px;
+    margin:0 auto;
+    display: flex;
+    position: relative;
+}
+.user-interface{
+    display: flex;
+    position: absolute;
+    right:0;
+}
+.user-element{
+    margin-left: 50px;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+/*Intro-section*/
+.intro-section{
+    background: #f8f8f8;
+    width:100%;
+    height:100vh;
+    background: url('Img/Intro-photo.png')no-repeat;
+    background-size: 120%;
+    overflow: hidden;
+    position: relative;
+}
+.intro-tittle{
+    font-size:600px;
+    letter-spacing: 100px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin:0;
+    transform:translate(-50%, -50%);
+    color:rgb(54, 54, 54);
+    display: block;
+    -moz-user-select: none;
+    -khtml-user-select: none; 
+    user-select: none;
+}
+
+.intro-container{
+    width:100%;
+    max-width: 100%;
+    margin-top:40px;
+    margin:0 auto;
+    padding-top:100px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    color:rgb(27, 27, 27);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size:20px;
+    margin-left:20px;
+}
+.logo-fashion{
+    font-weight: 300;
+}
+.dws-menu{
+    color:rgb(26, 26, 26);
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    z-index:9;
+    
+}
+.dws-menu *{
+    margin:0;
+    padding:0;
+}
+
+.dws-menu ul{
+    list-style: none;
+}
+.dws-menu > ul{
+    display: flex;
+    justify-content: center;
+}
+.dws-menu > ul li a{
+    display: block;
+    padding: 15px 30px 15px 40px;
+    color:rgb(32, 32, 32);
+}
+.dws-menu li a:hover{
+    color:#00c8c8;
+}
+
+.dws-sub-menu{
+    position: absolute;
+    min-width: 150px;
+    display: none;
+    background-color: white;
+    padding: 30px;
+    width:1px;
+    transition: all 0.2s;
+    z-index: 3;
+    box-shadow: 1px 12px 20px 7px rgba(34, 60, 80, 0.31);
+    
+}
+.dws-sub-menu *{
+    margin:0;
+    padding: 0;
+}
+.dws-sub-menu h5{
+    color:rgb(112, 112, 112);
+}
+.dws-sub-menu-container > ul li a{
+    padding: 20px 0px 0px 0px;
+    text-transform: none;
+    font-size:15px;
+    color:rgb(155, 155, 155);
+}
+.dws-sub-menu-container{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+}
+.dws-sub-menu-container img{
+    width:100%;
+}
+
+.dws-menu li:hover > .dws-sub-menu{
+    display: block;
+    width:400px;
+    transition: all 0.5s;
+}
+.dws-menu > ul li a p{
+    margin-top: 20px;
+    transform:rotate(90deg);
+    color:#00c8c8;
+}
+.plank{
+    position:absolute;
+    right:250px;
+    bottom:150px;
+    color:rgb(26, 26, 26);
+    border:2px solid rgb(26, 26, 26);
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size:20px;
+    letter-spacing: 5px;
+    z-index: 2;
+}
+
+/*product-section*/
+.product-section{
+    width:100%;
+    margin-top:100px;
+}
+.product-category{
+    width:100%;
+    margin:0 auto;
+    display: flex;
+    margin-top:50px;
+}
+.product-category *{
+    margin:0;
+    padding:0;
+}
+.product-category span a{
+    color:rgb(114, 114, 114);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 15px;
+    font-size:13px;
+}
+.product-category span a:hover{
+    color:#00c8c8;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    width:100%;
+    height:auto;
+    margin-top:200px;
+}
+.side-container{
+
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.top-container{
+    width:100%;
+    height:auto;
+    
+    display: flex;
+}
+.card{
+    margin:0 auto;
+    width:50%;
+    height:500px;
+    background: #f8f8f8;
+    margin:20px;
+    position: relative;
+    transition:0.5s;
+    overflow: hidden;
+    min-width: 400px;
+  
+}
+.side-card{
+    width:95%;
+    margin:0 auto;
+}
+.price{
+    position:absolute;
+    top:20px;
+    left:20px;
+    display: block;
+    color:rgb(153, 153, 153);
+
+}
+.card img{
+    display: block;
+    margin:0 auto;
+    max-width:450px;
+}
+.card:hover{
+    transition:0.5s;
+    box-shadow: 0px -1px 18px 6px rgba(34, 60, 80, 0.22);
+}
+.card:hover .info{
+    bottom:0;
+}
+.info{
+    position:absolute;
+    background-color: white;
+    width:100%;
+    height:auto;
+    padding: 30px;
+    color:rgb(39, 39, 39);
+    text-align: center;
+    bottom:-300px;
+    overflow: hidden;
+    transition: 1.5s;
+    box-shadow: 1px -19px 25px 0px rgba(34, 60, 80, 0.39);
+}
+.info *{
+    margin:0;
+    padding:0;
+}
+.icon-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin:0 auto;
+    width:100%;
+}
+.circle{
+    width:40px;
+    height:40px;
+    background: #727272;
+    border-radius: 50%;
+    margin:20px;
+    transition: 0.5s;
+}
+.circle:hover{
+    background: #00c8c8;
+    cursor:pointer;
+}
+/*lookbook section*/
+.lookbook-section{
+    width:100%;
+    height:60vh;
+    margin-top:100px;
+}
+.lookbook-card-container{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    height:100%;
+}
+.lookbook-card{
+    height:90%;
+    width:35%;
+    background: #f8f8f8;
+    display: flex;
+    padding: 100px 20px;
+    justify-content: space-between;
+    position: relative;
+    color:rgb(46, 46, 46);
+    margin:20px;
+}
+#middle-card{
+    margin:0px 0px;
+}
+.lookbook-card img{
+    display: block;
+    height:90%;
+    position: absolute;
+    bottom:0;
+}
+.lookbook-text-container{
+    position: absolute;
+    width:55%;
+    text-align: right;
+    right:30px;
+    font-size:18px;
+}
+.lookbook-text-container *{
+    margin:0;
+    padding: 0;
+}
+.lookbook-text-container h1{
+    text-transform: uppercase;
+    line-height: 20px;
+    color:rgb(87, 87, 87);
+    letter-spacing: 5px;
+    font-size: 35px;
+}
+.lookbook-text-container h2{
+    font-weight: 300;
+    color:rgb(87, 87, 87);
+    letter-spacing: 5px;
+    font-size: 35px;
+}
+
+@media (max-width:1500px){
+    .card-container{
+        display: block;
+        justify-content: space-between;
+        margin:0 auto;
+        width:100%;
+        height:auto;
+        
+    }
+    .side-container{
+
+        width:100%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .intro-tittle{
+        font-size:400px;
+        letter-spacing: 100px;
+        position: absolute;
+        left:50%;
+        top:50%;
+        margin:0;
+        transform:translate(-50%, -50%);
+        color:rgb(54, 54, 54);
+        display: block;
+        -moz-user-select: none;
+        -khtml-user-select: none; 
+        user-select: none;
+    }
+    
+}
+@media (max-width:1000px){
+    .container{
+        width:100%;
+        max-width: 600px;
+        margin:0 auto;
+        display: flex;
+        position: relative;
+    }
+    .intro-container{
+        width:100%;
+        max-width: 700px;
+        margin-top:40px;
+        margin:0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .lookbook-card-container{
+        width:100%;
+        display:block;
+        justify-content: space-around;
+        height:auto;
+    }
+    .lookbook-card{
+        height:500px;
+        width:90%;
+        background: #f8f8f8;
+        display: flex;
+        padding: 100px 20px;
+        justify-content: space-between;
+        position: relative;
+        color:rgb(46, 46, 46);
+        margin:0 auto;
+        margin-top:100px;
+    }
+    .lookbook-section{
+        width:100%;
+        height:auto;
+        margin-top:100px;
+    }
+    .top-container{
+        width:100%;
+        height:auto;
+        
+        display: block;
+    }
+    .card{
+        margin:0 auto;
+        width:90%;
+        height:500px;
+        background: #f8f8f8;
+        margin:40px;
+        position: relative;
+        transition:0.5s;
+        overflow: hidden;
+        min-width: 400px;
+        margin:0 auto;
+        margin-top: 50px;
+      
+    }
+    .side-card{
+        width:90%;
+        margin:0 auto;
+        margin-top: 50px;
+    }
+    .dws-menu > ul li a{
+        display: block;
+        padding: 15px 20px 15px 20px;
+        color:rgb(32, 32, 32);
+    }
+
+    .intro-tittle{
+        font-size:100px;
+        letter-spacing: 100px;
+        position: absolute;
+        left:50%;
+        top:50%;
+        margin:0;
+        transform:translate(-50%, -50%);
+        color:rgb(54, 54, 54);
+        display: block;
+        -moz-user-select: none;
+        -khtml-user-select: none; 
+        user-select: none;
+    }
+}
+@media (max-width:650px){
+    .intro-container{
+        width:100%;
+        max-width: 100%;
+        margin-top:0px;
+        margin:0 auto;
+        padding-top:50px;
+        display: flex;
+        justify-content: space-between;
+        background: white;
+        display: block;
+    }
+    .logo{
+        color:rgb(27, 27, 27);
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size:20px;
+        margin-left:0px;
+        margin:0 auto;
+        width:200px;
+        text-align: center;
+        margin-top:20px;
+    }
+    .dws-menu > ul li a{
+        display: block;
+        padding: 15px;
+        color:rgb(32, 32, 32);
+    }
+}
+@media (max-width:460px){
+    .dws-menu > ul li a{
+        display: block;
+        padding:5px;
+        color:rgb(32, 32, 32);
+        border-right: 1px solid black;
+    }
+    .dws-sub-menu{
+        position: absolute;
+        min-width: 150px;
+        display: none;
+        background-color: white;
+        padding: 10px;
+        width:1px;
+        transition: all 0.2s;
+        z-index: 3;
+        box-shadow: 1px 12px 20px 7px rgba(34, 60, 80, 0.31);
+        
+    }
+    .container{
+        width:100%;
+        max-width: 400px;
+        margin:0 auto;
+        display: flex;
+        position: relative;
+    }
+    .lookbook-card{
+        height:800px;
+        width:90%;
+        background: #f8f8f8;
+        display: flex;
+        flex-direction: column;
+        padding: 100px 20px;
+        justify-content: space-between;
+        position: relative;
+        color:rgb(46, 46, 46);
+        margin:0 auto;
+        margin-top:100px;
+        text-align: center;
+    }
+    .lookbook-card img{
+        display: block;
+        height:50%;
+        position:absolute;
+        bottom:0;
+        left:26%;
+        margin:0 auto;
+    }
+    .lookbook-text-container{
+        position: static;
+        width:100%;
+        text-align: center;
+
+        font-size:18px;
+    }
+}
